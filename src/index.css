@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,h1,label,input,button,li{
+    font-family: 'Roboto', A2rial, Helvetica, sans-serif;
+    color: #002f34;
+  }
