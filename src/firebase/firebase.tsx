@@ -1,19 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";  
-import { getStorage } from "firebase/storage";       
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBPVN1nchOXhUTJ-WFggTmU3tQ7-eBmgAg",
-    authDomain: "olx-clone-react-45570.firebaseapp.com",
-    projectId: "olx-clone-react-45570",
-    storageBucket: "olx-clone-react-45570.appspot.com",
-    messagingSenderId: "1018991413094",
-    appId: "1:1018991413094:web:50b35d2a59c808e064aaa7"
-  };
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+};
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
-export const db = getFirestore(app);   
-export const storage = getStorage(app); 
+export const db = getFirestore(app);
+export const storage = getStorage(app);

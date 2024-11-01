@@ -27,7 +27,7 @@ out
 firebase-debug.log
 
 # Firebase-related files
-.firebase/firebase
+.firebase/
 firestore.rules
 firebase.json
 firestore.indexes.json
@@ -37,7 +37,6 @@ storage.rules
 .vercel/
 .netlify/
 .netlify/functions-logs/
-
 
 # Editor directories and files
 .vscode/*
@@ -57,3 +56,6 @@ Thumbs.db
 # Visual Studio Code settings
 .history/
 
+# OS-specific files
+*.DS_Store
+Thumbs.db
