@@ -27,7 +27,7 @@ out
 firebase-debug.log
 
 # Firebase-related files
-.firebase/
+.firebase/firebase
 firestore.rules
 firebase.json
 firestore.indexes.json
