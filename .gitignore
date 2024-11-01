@@ -7,18 +7,53 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
+.pnp
+.pnp.js
+
+# Build directories
 dist
 dist-ssr
+out
+.next
+.next/cache
+.cache
+
+# Local environment files
 *.local
+.env
+.env.*.local
+firebase-debug.log
+
+# Firebase-related files
+.firebase/
+firestore.rules
+firebase.json
+firestore.indexes.json
+storage.rules
+
+# Serverless deployment files
+.vercel/
+.netlify/
+.netlify/functions-logs/
+
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Visual Studio Code settings
+.history/
+
